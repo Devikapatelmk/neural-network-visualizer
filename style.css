@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #1e1f29, #111218);
+    color: white;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 42px;
+    background: linear-gradient(90deg, #00f2fe, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    padding: 12px 28px;
+    font-size: 18px;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.canvas-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+circle {
+    transition: 0.25s;
+}
+
+circle:hover {
+    fill: #00eaff !important;
+    r: 22 !important;
+}
+
+line {
+    stroke-opacity: 0.65;
+    transition: 0.25s;
+}
+
+line:hover {
+    stroke-opacity: 1;
+    stroke-width: 3 !important;
+}
